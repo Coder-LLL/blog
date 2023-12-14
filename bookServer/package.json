@@ -1,0 +1,19 @@
+{
+  "name": "bookserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Coder-LLL <1810994778@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "formidable": "^2.0.1",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^12.0.0",
+    "koa-static": "^5.0.0"
+  }
+}

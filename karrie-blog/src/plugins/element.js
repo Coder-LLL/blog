@@ -1,0 +1,63 @@
+import {
+  DropdownItem,
+  DropdownMenu,
+  Dropdown,
+  Image,
+  Container,
+  Footer,
+  Header,
+  Menu,
+  MenuItem,
+  Button,
+  Carousel,
+  CarouselItem,
+  Main,
+  Dialog,
+  Tabs,
+  TabPane,
+  Form,
+  FormItem,
+  Input,
+  Tooltip,
+  Upload,
+  Card,
+  Timeline,
+  TimelineItem,
+  Checkbox,
+  CheckboxButton,
+  CheckboxGroup,
+  Message,
+} from "element-ui";
+const element = {
+  install: function (Vue) {
+    Vue.use(Message);
+    Vue.use(Image);
+    Vue.use(Container);
+    Vue.use(Footer);
+    Vue.use(Header);
+    Vue.use(Menu);
+    Vue.use(MenuItem);
+    Vue.use(Dropdown);
+    Vue.use(DropdownMenu);
+    Vue.use(DropdownItem);
+    Vue.use(Button);
+    Vue.use(Carousel);
+    Vue.use(CarouselItem);
+    Vue.use(Main);
+    Vue.use(Dialog);
+    Vue.use(Tabs);
+    Vue.use(TabPane);
+    Vue.use(Form);
+    Vue.use(FormItem);
+    Vue.use(Input);
+    Vue.use(Tooltip);
+    Vue.use(Upload);
+    Vue.use(Card);
+    Vue.use(Timeline);
+    Vue.use(TimelineItem);
+    Vue.use(Checkbox);
+    Vue.use(CheckboxButton);
+    Vue.use(CheckboxGroup);
+  },
+};
+export default element;

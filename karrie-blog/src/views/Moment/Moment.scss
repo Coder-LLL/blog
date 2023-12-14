@@ -1,0 +1,94 @@
+@import '../../assets//styles//global.scss';
+.asideBtn{
+  position: fixed;
+  left: 50px;
+  top: 100px;
+}
+.moment {
+  // position: relative;
+  
+
+  
+  margin-top: $marginTopMain;
+  // position: relative;
+  ::v-deep #tab-home {
+    @include tabHome;
+  }
+
+  .el-tab-pane {
+    background-color: yellow;
+    @include clearfix;
+    position: static;
+    width: 100%;  
+    padding: 30px 30px 300px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    @include boxShadow;
+
+    header {
+      h2 {
+        margin: 20px 0;
+        color: $textColor3;
+      }
+
+      .infoList {
+        display: flex;
+        padding-left: 20px;
+
+     
+        .infoItem{
+          margin-right: 20px;
+          color: $textColor;
+          font-size: 14px;
+          span{
+            margin-left: 3px;
+          }
+        }
+
+        .author span {
+          cursor: pointer;
+
+          &:hover {
+            color: $textHoverColor3;
+          }
+        }
+      }
+
+      .tags-box {
+        margin: 20px 0;
+
+        .el-tag {
+          cursor: pointer;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    article {
+      text-align: justify;
+      font-size: 16px;
+      line-height: 1.8;
+
+      .momentImageList {
+        margin: 20px 0;
+
+        .el-image {
+          width: 45%;
+          margin-left: 5%;
+          background-color: pink;
+        }
+      }
+    }
+
+    footer {
+      .extra-feature-btn-box {
+        margin: 20px 0;
+        text-align: center;
+
+        .el-button:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

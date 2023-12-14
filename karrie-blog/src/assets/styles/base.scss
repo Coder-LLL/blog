@@ -1,0 +1,65 @@
+body,
+div,
+blockquote,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+
+}
+
+html,
+body {
+  background-color: #F6F6F6;
+}
+
+/* 重置fieldset（表单分组）、图片的边框为0*/
+ul li {
+  list-style: none
+}
+
+
+
+
+// 滚动条长宽
+::-webkit-scrollbar {
+  width: 0.05rem;
+  height: 0.3rem;
+  background-color: transparent;
+}
+
+/*滚动区域背景*/
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+/*竖向滚动条*/
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #000;
+  border-radius: 0.03rem;
+}
+
+/*横向滚动条*/
+
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #000;
+  border-radius: 0.03rem;
+}

@@ -1,0 +1,75 @@
+@import '../../assets/styles/global.scss';
+
+.articles {
+  article {
+    padding: 20px;
+    background: #ffffff;
+    margin-top: 20px;
+
+    h3 {
+      margin-bottom: 10px;
+      color: $textColor3;
+
+      &:hover {
+        color: $textHoverColor;
+        cursor: pointer;
+      }
+    }
+
+    .info-box {
+      display: flex;
+      justify-content: space-between;
+
+
+      .left-img {
+        width: 30%;
+        height: 130px;
+        @include scaleImg;
+      }
+
+      width: 68%;
+      position: relative;
+
+    .content {
+        padding-top: 20px;
+        margin-bottom: 35px;
+        color: $textColor2;
+        font-size: 14px;
+        @include textNumberLine(3);
+      }
+
+      .infoList {
+        position: absolute;
+        display: flex;
+        bottom: 0;
+
+        .infoItem{
+          margin-right: 25px;
+          color: $textColor;
+          font-size: 14px;
+          span{
+            margin-left: 3px;
+          }
+        }
+
+        .author span,
+        .type span {
+          cursor: pointer;
+          &:hover {
+            color: $textHoverColor3;
+          }
+        }
+      }
+
+    }
+  }
+
+  .load-more-container {
+    @include loadMore
+  }
+
+  .no-more-container {
+    @include loadMore
+  }
+
+}
